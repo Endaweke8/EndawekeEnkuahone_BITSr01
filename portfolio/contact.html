@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+
+<body>
+    <div id="id01" class="modal">
+        <form class="modal-content animate">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h1 align="center"><b>Message Me</b></h1>
+            <div class="container">
+                <label for="uname"><b>Name</b></label><br>
+                <input type="text" name="name" placeholder="Name" required><br>
+
+                <label for="email"><b>Email</b></label><br><br>
+                <input type="email" name="email" style="padding: 5px;width:100%" id="emil" placeholder="Email" style="width:100%" required><br><br>
+                <label for="subject"><b>Subject</b></label><br><br>
+                <input type="text" name="subject" placeholder="Subject" required><br>
+                <label for="message"><b>Message</b></label><br><br>
+                <textarea style="width:100%;height: 200px;padding: 5px;" name="message" id='txtarea' placeholder="type a message" required></textarea><br>
+
+                <input type="submit" name="sendd" value="Send" id="login">
+
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

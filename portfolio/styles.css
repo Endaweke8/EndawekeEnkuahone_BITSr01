@@ -1,0 +1,593 @@
+/********************************************************************
+ * @author:      Kaven
+ * @email:       kaven@wuwenkai.com
+ * @website:     http://blog.kaven.xyz
+ * @file:        [portfolio] /stles.css
+ * @create:      2022-03-07 22:09:33.711
+ * @modify:      2022-04-11 23:21:32.768
+ * @version:     
+ * @times:       57
+ * @lines:       593
+ * @copyright:   Copyright © 2022 Kaven. All Rights Reserved.
+ * @description: [description]
+ * @license:     [license]
+ ********************************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navebar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    background-color: rgb(140, 148, 184);
+    font-family: 'Ubuntu', 'sans-serif;';
+}
+
+.navebar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navebar .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navebar .logo a span {
+    color: black;
+}
+
+.navebar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navebar .menu li a {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navebar .menu li a:hover {
+    color: black;
+}
+
+
+/*Menu button styling */
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Home  section styling*/
+
+.home {
+    display: flex;
+    background-color: rgb(239, 240, 245);
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 30px;
+}
+
+.home .home-content .text-2 {
+    font-size: 73px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.home .home-content a {
+    display: inline-block;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    background-color: rgb(140, 148, 184);
+    color: #fff;
+    border: 2px solid rgb(140, 148, 184);
+    ;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color: #fff;
+    background: none;
+}
+
+
+/*All similar styling code*/
+
+section {
+    padding: 100px 0;
+}
+
+.about,
+.education,
+.skills,
+.teams,
+.contact,
+footer {
+    font-family: monospace;
+}
+
+.about .about-content,
+.education .education-content,
+.skills .skills-content,
+.teams .carousel,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title {
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+section .title::before {
+    content: " ";
+    position: absolute;
+    width: 180px;
+    height: 5px;
+    bottom: 0;
+    left: 50%;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    padding: 5px;
+    height: 3px;
+    bottom: -1px;
+    color: black;
+    background-color: #fff;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*
+About Section styling
+*/
+
+.about .title::after {
+    content: "who i am";
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right span {
+    color: rgb(0, 0, 0);
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    background-color: rgb(194, 220, 172);
+    color: black;
+    border: 1px solid rgb(147, 191, 165);
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: crimson;
+    background: none;
+}
+
+
+/*Services Style start*/
+
+.teams {
+    color: black;
+    background: rgb(239, 240, 245);
+}
+
+.teams .title::before {
+    background: rgb(183, 194, 214);
+}
+
+.teams .title::after {
+    background: rgb(239, 240, 245);
+    content: "what i provide";
+}
+
+
+/*Skills section styling
+*/
+
+.skills .title::after {
+    content: "bio express me";
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.skills .skills-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left {
+    font-size: 20px;
+}
+
+.skills .skills-content .right {
+    font-size: 20px;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skills .skills-content .right span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/*education details styling
+*/
+
+.education .title::after {
+    content: "school life express me";
+}
+
+.education .education-content .column {
+    width: calc(50% - 30px);
+}
+
+.education .education-content .left .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.education .education-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.education .education-content .left p {
+    text-align: justify;
+}
+
+.education .education-content .left {
+    font-size: 20px;
+}
+
+.education .education-content .right {
+    font-size: 20px;
+}
+
+.education .education-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.education .education-contentt .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.education .education-content .right span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/*
+Teams section styling*/
+
+.teams .title::after {
+    content: "who with me";
+}
+
+.teams .carousel .card {
+    width: calc(25% - 22px);
+    background: rgb(185, 214, 214);
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover {
+    background: rgb(145, 138, 138);
+}
+
+.teams .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card .box {
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.teams .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 5px solid rgb(68, 122, 122);
+}
+
+
+/*
+Contact section styling*/
+
+.contact .title::after {
+    content: "get in touch";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .left .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .left .row .info {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.contact .contact-content .left .row i {
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #333;
+}
+
+
+/*Footer section styling*/
+
+footer {
+    background-color: rgb(140, 148, 184);
+    padding: 20px 23px;
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (max-width: 1300px) {
+    .home .max-width {
+        margin-left: 0;
+    }
+    @media (max-width: 1104px) {
+        .about .about-content .left img {
+            height: 350px;
+            width: 350px;
+        }
+    }
+    @media (max-width: 991px) {
+        .max-width {
+            padding: 0 50px;
+        }
+    }
+    @media (max-width: 947px) {
+        .menu-btn {
+            display: block;
+            z-index: 999;
+        }
+        .navebar .menu {
+            position: fixed;
+            background-color: rgb(140, 148, 184);
+            height: 100vh;
+            width: 100%;
+            left: -100%;
+            top: 0;
+            text-align: center;
+            padding-top: 80px;
+            transition: all 0.3s ease;
+        }
+        .navebar .menu.active {
+            left: 0;
+        }
+        .navebar .menu li {
+            display: block;
+        }
+        .navebar .menu li a {
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 25px;
+        }
+        .navebar .menu li a:hover {
+            background-color: #555;
+        }
+        .home .home-content .text-2 {
+            font-size: 50px;
+        }
+        .home .home-content .text-3 {
+            font-size: 30px;
+        }
+        .home .home-content a {
+            font-size: 23px;
+            padding: 10px 30px;
+        }
+        .max-width {
+            max-width: 800px;
+        }
+        .about .about-content .column {
+            width: 50%;
+        }
+        .about .about-content .left {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 60px;
+        }
+        .about .about-content .right {
+            flex: 100%;
+        }
+        .teams .carousel .card {
+            width: calc(50% - 20px);
+            margin-bottom: 20px;
+        }
+        .skills .skills-content .column,
+        .education .education-content .column,
+        .contact .contact-content .column {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+    }
+    @media (max-width: 690px) {
+        .max-width {
+            padding: 0 25px;
+        }
+        .home .home-content .text-2 {
+            font-size: 40px;
+        }
+        .home .home-content .text-3 {
+            font-size: 20px;
+        }
+        .teams .carousel .card {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 30px;
+    }
+    .home .home-content .text-3 {
+        font-size: 15px;
+    }
+    .home .home-content a {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+}
